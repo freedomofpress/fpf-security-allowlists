@@ -8,8 +8,19 @@ jobs:
     container: debian:bookworm
 
     steps:
-      - uses: actions/checkout@v6
       - name: Install dependencies
-        run: apt-get update && apt-get install jsonlint --yes
+        run: |
+          apt-get update
+          apt-get install --yes \
+            git \
+            jq \
+            jsonlint \
+            make \
+            moreutils
+      - uses: actions/checkout@v6
+      - name: Check JSON formatting
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          make check
       - name: Lint JSON
         run: find . -not -type d -name '*.json' | xargs -n1 -exec jsonlint-php
