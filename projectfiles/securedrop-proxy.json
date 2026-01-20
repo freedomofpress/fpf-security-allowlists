@@ -1,8 +1,8 @@
 {
-	"variables": {
-		"SAFETY_IGNORE_IDS": [
-			"61601",
-			"61893"
-		]
-	}
+  "variables": {
+    "SAFETY_IGNORE_IDS": [
+      "61601",
+      "61893"
+    ]
+  }
 }
