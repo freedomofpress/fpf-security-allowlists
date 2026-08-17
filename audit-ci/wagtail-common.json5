@@ -1,0 +1,9 @@
+// https://github.com/IBM/audit-ci#options
+{
+    "report-type": "summary",
+    // Fail on any vulnerabilities found at severity "low" and more
+    // severe.
+    "low": true,
+    "allowlist": [
+    ]
+}
