@@ -6,5 +6,13 @@
     "low": true,
     "allowlist": [
         "GHSA-36jr-mh4h-2g58",
+        // Package: braces
+        // Summary: stack exhaustion
+        // Reason for allowing: invalid CVE
+        "GHSA-vfj7-8cjw-p6xm",
+        // Package: sprintf-js
+        // Summary: Denial of service
+        // Reason for allowing: invalid CVE
+        "GHSA-hp3w-g68c-fv3c",
     ]
 }
