@@ -5,13 +5,13 @@
     // severe.
     "low": true,
     "allowlist": [
-        // Package: braces
-        // Summary: stack exhaustion
-        // Reason for allowing: invalid CVE
-        "GHSA-vfj7-8cjw-p6xm",
-        // Package: sprintf-js
+        // Package: minimatch
+        // Summary: potential denial of service
+        // Reason for allowing: cannot update without jest update
+        "GHSA-g3hv-75wg-m249",
+        // Package: glob
         // Summary: Denial of service
-        // Reason for allowing: invalid CVE
-        "GHSA-hp3w-g68c-fv3c",
+        // Reason for allowing: cannot update without jest update
+        "GHSA-3g3m-2fjr-6pw4",
     ]
 }
